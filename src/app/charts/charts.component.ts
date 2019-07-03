@@ -9,12 +9,12 @@ import {htmlToPlaintextPipe} from '../comon/filters/custom.pipe';
   providers:[htmlToPlaintextPipe]
 })
 export class ChartsComponent implements OnInit {
- chartsyntax:string="";
+  chartselector:string="";
  public chartModel;
   constructor() { }
 
   ngOnInit() {
-    this.chartsyntax="<app-bar-chart chartdivname='barChartDiv' [chart]='barChartData'></app-bar-chart>";
+    this.chartselector="<app-bar-chart chartdivname='barChartDiv' [chart]='barChartData'></app-bar-chart>";
 this.chartModel={
   "data": [ 18,16,20,25,30],
   "dataCompare": [21,26,31,38,45],

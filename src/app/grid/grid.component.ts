@@ -6,13 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./grid.component.css']
 })
 export class GridComponent implements OnInit {
-  gridsyntax:string="";
+  gridselector:string="";
   public gridModel;
   public griddata;
   constructor() { }
 
   ngOnInit() {
-    this.gridsyntax="<grid [gridConfig]='gridSampleConfig' [gridData]='gridData'></grid>";
+    this.gridselector="<grid [gridConfig]='gridSampleConfig' [gridData]='gridData'></grid>";
     this.gridModel={
       layOutConfig: {
           height: '500px'

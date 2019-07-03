@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./bread-crumbs.component.css']
 })
 export class BreadCrumbsComponent implements OnInit {
-
+  breadcrumbselector:string="";
+  public BreadCrumbConfig;
   constructor() { }
 
   ngOnInit() {
+    this.breadcrumbselector="<app-bread-crumb [objBreadcrumbs]='objBreadcrumbs'></app-bread-crumb>"
   }
 
 }
